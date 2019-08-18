@@ -1,0 +1,9 @@
+主要对aflgo安装步骤补充，系统Ubuntu 16.04 aflgo地址https://github.com/aflgo/aflgo
+第一步安装llvm，按照https://www.jianshu.com/p/49261b1a50c4安装。
+第二步安装时除了上面那些，还需要 sudo apt-get install autoconf,libtool,automake（分别安装），sudo apt-get install pkg-config。
+第三步照做
+第四步git clone https://gitlab.gnome.org/GNOME/libxml2(原下载源可能有问题)
+其余步骤照做
+进行测试时，可能出现如下错误，另打开一个终端输入echo core >/proc/sys/kernel/core_pattern
+另一个可能的错误，需要加-t参数，参看aflgo github上docs.
+注：前面的环境变量都是临时变量，关掉终端就会被杀死，需要重新添加其它的，如果遇到了报错，先看命令是否错误，报错内容，搜索解决还有问题就从第二步开始做。
